@@ -1,0 +1,17 @@
+{
+  "name": "my-jekyll-project",
+  "version": "1.0.0",
+  "description": "A Jekyll project with Tailwind CSS integrated.",
+  "scripts": {
+    "build:css": "postcss assets/css/main.css -o assets/css/output.css",
+    "watch:css": "postcss assets/css/main.css -o assets/css/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.2.19",
+    "postcss": "^8.4.6",
+    "autoprefixer": "^10.4.0"
+  },
+  "devDependencies": {
+    "postcss-cli": "^8.3.1"
+  }
+}

@@ -1,0 +1,25 @@
+title: My Jekyll Project
+description: A simple Jekyll project integrated with Tailwind CSS
+baseurl: ""
+url: "http://example.com"
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+sass:
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+  - _sass
+  - _includes
+  - _layouts
+  - _posts
+  - assets
+  - css
+  - js
