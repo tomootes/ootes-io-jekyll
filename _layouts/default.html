@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-</head>
-<body>
-    <header>
-        <h1>{{ site.title }}</h1>
-        <nav>
-            <ul>
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/about' | relative_url }}">About</a></li>
-                <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        {{ content }}
-    </main>
-
-    <footer>
-        <p>&copy; {{ site.year }} {{ site.title }}</p>
-    </footer>
-    
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/output.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/legacy.css' | relative_url }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" />
+  </head>
+  <body>
+    {% include nav.html %} {% include hero.html %} {% include projects.html %}
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-</body>
+  </body>
 </html>

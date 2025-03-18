@@ -4,14 +4,17 @@
   "description": "A Jekyll project with Tailwind CSS integrated.",
   "scripts": {
     "build:css": "postcss assets/css/main.css -o assets/css/output.css",
-    "watch:css": "postcss assets/css/main.css -o assets/css/output.css --watch"
+    "watch:css": "postcss assets/css/main.css -o assets/css/output.css --watch",
+    "jekyll": "bundle exec jekyll serve"
   },
   "dependencies": {
-    "tailwindcss": "^2.2.19",
+    "@fontsource/jetbrains-mono": "^5.2.5",
+    "autoprefixer": "^10.4.0",
     "postcss": "^8.4.6",
-    "autoprefixer": "^10.4.0"
+    "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
     "postcss-cli": "^8.3.1"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

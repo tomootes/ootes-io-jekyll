@@ -8,8 +8,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 sass:
-  style: compressed
+  sass_dir: _scss
 exclude:
+  - "/node_modules"
   - Gemfile
   - Gemfile.lock
   - README.md
@@ -17,9 +18,11 @@ exclude:
   - postcss.config.js
   - tailwind.config.js
   - _sass
-  - _includes
-  - _layouts
   - _posts
-  - assets
   - css
   - js
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/

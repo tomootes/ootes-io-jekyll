@@ -1,0 +1,28 @@
+<div class="section point-section">
+  <div class="container">
+    <h2 class="section--heading flex-center">Opdrachtgevers</h2>
+    <div class="row cards-holder">
+      {% for project in site.projects %}
+      <a href="{{ project. url }}" class="card project"
+        ><div class="card-header">
+          <div class="card-header__image">
+            <img
+              src="img/vws.jpg"
+              alt="img/vws.jpg"
+              class="card-img-top img-fluid"
+            />
+          </div>
+          <h3 class="card-header__title">Front-end developer - BCO-Portaal</h3>
+        </div>
+        <div class="card-block">
+          <p class="card-text">
+            Een belangrijke pijler voor de aanpak van covid-19 in Nederland was
+            het bron- en contactonderzoek. Hiervoor ontwikkelde het VWS in...
+          </p>
+        </div>
+        <a class="card-link">Lees meer ➝</a></a
+      >
+      {% endfor %}
+    </div>
+  </div>
+</div>
