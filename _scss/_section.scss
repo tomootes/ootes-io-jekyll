@@ -1,0 +1,20 @@
+.section{
+  padding: 3rem 0;
+  width: 100%;
+  border-bottom: 1px solid $gray-lighter;
+  @media (min-width: $break-sm)  {
+    padding: 5rem 0;
+  }
+  &.section--smaller{
+      padding: 3.5rem 0;
+  }
+  .block{
+    margin: 7rem 0;
+    &:last-child{
+      margin: 7rem 0 0;
+    }
+  }
+  .section--heading{
+    margin: 0 0 2rem 0;
+  }
+}

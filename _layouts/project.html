@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.name }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-  </head>
-  <body>
+---
+layout: default
+---
+
     <header>
       <h1>{{ page.name }}</h1>
       <p><a href="{{ page.address }}" target="_blank">{{ page.client }}</a></p>
@@ -41,5 +36,3 @@
       </div>
       {% endif %}
     </main>
-  </body>
-</html>

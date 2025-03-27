@@ -1,0 +1,44 @@
+.col-12{
+  width: 100%;
+}
+
+.col-2{
+  width: calc(16.66% - (( 4 * #{$gutter} ) / 5));
+}
+
+.col-3{
+  width: calc(25% - (( 3 * #{$gutter} ) / 4));
+}
+
+.col-4{
+   width: calc(33.3333% - (( 2 * #{$gutter} ) / 3));
+}
+
+.col-half{
+  width: calc(50% - (( 1 * #{$gutter} ) / 2));
+}
+
+.col-8{
+  width: calc(66.66666% - (( 1 * #{$gutter} ) / 3));
+}
+
+.col-9{
+  width: calc(75% - (( 1 * #{$gutter} ) / 4));
+}
+
+[class*="col-"] {
+  @media (max-width: $break-sm)  {
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+  }
+}
+
+.row{
+  width: 100%;
+  flex-wrap: wrap;
+  @media (max-width: $break-sm)  {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,14 +1,15 @@
-<div class="section point-section">
+<div class="section point-section py-16">
   <div class="container">
-    <h2 class="section--heading flex-center">Opdrachtgevers</h2>
+    <h2 class="section--heading flex-center mb-12">Opdrachtgevers</h2>
     <div class="row cards-holder">
-      {% for project in site.projects %}
-      <a href="{{ project. url }}" class="card project"
+      {% assign sorted_projects = site.projects | sort: "date" %}
+      {% for project in sorted_projects reversed %}
+      <a href="{{ project.url }}" class="card project"
         ><div class="card-header">
           <div class="card-header__image">
             <img
-              src="img/vws.jpg"
-              alt="img/vws.jpg"
+              src="/assets/{{project.img}}"
+              alt="/assets/{{project.img}}"
               class="card-img-top img-fluid"
             />
           </div>
@@ -16,8 +17,7 @@
         </div>
         <div class="card-block">
           <p class="card-text">
-            Een belangrijke pijler voor de aanpak van covid-19 in Nederland was
-            het bron- en contactonderzoek. Hiervoor ontwikkelde het VWS in...
+            {{ project.content }}
           </p>
         </div>
         <a class="card-link">Lees meer ➝</a></a

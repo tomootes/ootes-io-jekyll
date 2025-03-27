@@ -1,0 +1,77 @@
+
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:   1.35rem !default;
+$font-size-xl:   2.25rem !default;
+$font-size-sm:   .875rem !default;
+$font-size-xs:   .875rem !default;
+
+$h1-font-size: 2.5rem !default;
+$h2-font-size: 2rem !default;
+$h3-font-size: 1.75rem !default;
+$h4-font-size: 1.5rem !default;
+$h5-font-size: 1.25rem !default;
+$h6-font-size: 1rem !default;
+
+$heading-family: 'JetBrains Mono';
+$body-family: 'Open Sans';
+
+body{
+  color: $gray;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: $heading-family;
+  font-weight: 500;
+  margin-bottom: .5rem;
+  .icon{
+    font-size: 3.5rem;
+  }
+}
+
+h1{
+  font-size: $h1-font-size;
+}
+
+h2{
+  font-size: $h2-font-size;
+}
+
+h3{
+  font-size: $h3-font-size;
+}
+
+h4{
+  font-size: $h4-font-size;
+}
+
+h5{
+  font-size: $h5-font-size;
+}
+
+h6{
+  font-size: $h6-font-size;
+}
+
+html{
+
+  font-family: $body-family;
+}
+
+p{
+  font-weight: lighter;
+  line-height: 1.75;
+  font-size: $font-size-base;
+  a{
+    color: $brand-primary;
+    text-decoration: underline;
+  }
+}
+
+@mixin heading() {
+  font-family: $heading-family;
+  .icon{
+    font-size: 3.5rem;
+  }
+}

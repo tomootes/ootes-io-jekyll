@@ -3,7 +3,7 @@ client: "Developer.overheid.nl"
 url: "don"
 date: "2023-04-04"
 name: "Developer Advocate - Developer.overheid.nl"
-img: "img/don.svg"
+img: "img/don.png"
 address: "https://volteuropa.org"
 techniques: ["Docusaurus", "JSX", "SCSS", "Python", "Tailwind"]
 type: "Website"
