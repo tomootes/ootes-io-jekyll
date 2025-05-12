@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 999;
   padding: 1rem 0;
+  
   .navbar-content{
     .logo{
       display: flex;
@@ -31,7 +32,9 @@
       }
     }
   }
-  &.active{
-    background: $brand-primary-transparent;
+  &--coloured{
+    background: $brand-primary;
   }
+
+  background: $brand-primary-transparent;
 }

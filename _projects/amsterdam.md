@@ -2,14 +2,16 @@
 client: "Gemeente Amsterdam"
 url: "gemeente_amsterdam"
 date: "2020-01-31"
-name: "Full-stack developer - Kies je kraam"
+project_name: "Kies je kraam"
+role: "Developer"
 img: "img/gemeente-amsterdam.svg"
 address: "https://www.amsterdam.nl/ondernemen/markt-straathandel/digitaal-indelen/"
 techniques: ["Typescript", "NodeJS", "React", "JS", "SCSS", "Postgres"]
 type: "Webapp"
+description: "In opdracht van TiltShift bouwde ik mee aan een webapp voor de straatmarkten in Amsterdam."
 ---
 
-In opdracht van [TiltShift](http://www.tiltshift.nl) bouwde ik mee aan een webapp voor de markten in Amsterdam.
+In opdracht van [TiltShift](http://www.tiltshift.nl) bouwde ik mee aan een webapp voor de straatmarkten in Amsterdam.
 Dagelijks tekenden in Amsterdam marktmeesters de plattegrond van elke markt in en kreeg iedereen met de hand een plekje toegewezen.
 Vanwege organisatorische en logistieke redenen was er vraag naar een digitale oplossing voor het indelen van de markt.
 In dit traject bouwden we aan een versie van de applicatie die kon proefdraaien in Amsterdam west op Plein 40 - 45.

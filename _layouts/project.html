@@ -1,38 +1,11 @@
----
-layout: default
----
-
-    <header>
-      <h1>{{ page.name }}</h1>
-      <p><a href="{{ page.address }}" target="_blank">{{ page.client }}</a></p>
-    </header>
-    <main>
-      <img src="{{ page.img }}" alt="{{ page.client }}" />
-      <p>{{ page.date }}</p>
-      <p>{{ page.text }}</p>
-      <h2>Techniques Used</h2>
-      <ul>
-        {% for technique in page.techniques %}
-        <li>{{ technique }}</li>
-        {% endfor %}
-      </ul>
-      {% if page.tasks %}
-      <h2>Tasks</h2>
-      <ul>
-        {% for task in page.tasks %}
-        <li>{{ task }}</li>
-        {% endfor %}
-      </ul>
-      {% endif %} {% if page.screenshots %}
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        {% for screenshot in page.screenshots %}
-        <img
-          src="{{ screenshot.url }}"
-          alt="{{ screenshot.file }}"
-          class="{{ screenshot.direction }}"
-        />
-        {% endfor %}
+<!DOCTYPE html>
+<html lang="nl">
+  {% include head.html %} {% include nav.html background="coloured" %}
+  {% include hero.html collapsed="true" project_title=page.client %}
+  <div class="container mt-12">
+      <main>
+        {{content}}
       </div>
-      {% endif %}
     </main>
+  </div>
+</html>

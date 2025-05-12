@@ -1,7 +1,8 @@
 {
-  "name": "my-jekyll-project",
-  "version": "1.0.0",
-  "description": "A Jekyll project with Tailwind CSS integrated.",
+  "name": "ootes-io-jekyll",
+  "version": "0.1.0",
+  "description": "Portfolio website of Tom Ootes",
+  "license": "CC-BY-4.0",
   "scripts": {
     "build:css": "postcss assets/css/main.css -o assets/css/output.css",
     "watch:css": "postcss assets/css/main.css -o assets/css/output.css --watch",

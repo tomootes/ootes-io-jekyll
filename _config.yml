@@ -1,5 +1,7 @@
-title: My Jekyll Project
-description: A simple Jekyll project integrated with Tailwind CSS
+title: Portfolio Tom Ootes
+description: De Portfolio website van Tom Ootes
+author: Tom Ootes
+email:  tom@ootes.io
 baseurl: ""
 url: "http://example.com"
 markdown: kramdown
@@ -26,3 +28,10 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project

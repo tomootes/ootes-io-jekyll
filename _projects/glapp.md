@@ -2,14 +2,16 @@
 client: "Groenlinks"
 url: "glapp"
 date: "2019-12-05"
-name: "Ontwikkeling web-app"
+project_name: "Glapp"
+role: "Front-end developer"
 img: "img/groenlinks.png"
 address: "https://glapp.nl"
 techniques: ["Angular", "SCSS"]
 type: "Webapp"
+description: "Voor GroenLinks bouwde ik een web-app om deur tot deur campaigning efficiënter te maken."
 ---
 
-Voor GroenLinks bouwden we een web-app om deur tot deur campaigning efficiënter te maken.
+Voor GroenLinks bouwde ik een web-app om deur tot deur campaigning efficiënter te maken.
 
 ### Screenshots
 

@@ -1,10 +1,10 @@
 <div class="section point-section py-16">
   <div class="container">
-    <h2 class="section--heading flex-center mb-12">Opdrachtgevers</h2>
-    <div class="row cards-holder">
+    <h1 class="section--heading flex-center mb-6 text-2xl text-center">Opdrachtgevers</h1>
+    <div class="grid grid-cols-3 gap-4">
       {% assign sorted_projects = site.projects | sort: "date" %}
       {% for project in sorted_projects reversed %}
-      <a href="{{ project.url }}" class="card project"
+      <a href="{{ project.url }}" class="card p-1"
         ><div class="card-header">
           <div class="card-header__image">
             <img
@@ -13,14 +13,15 @@
               class="card-img-top img-fluid"
             />
           </div>
-          <h3 class="card-header__title">Front-end developer - BCO-Portaal</h3>
+          <h3 class="card-header__title">{{ project.project_name }}</h3>
+          <i>{{ project.role }}</i>
         </div>
         <div class="card-block">
-          <p class="card-text">
-            {{ project.content }}
-          </p>
+          <div class="card-text text-left">
+            {{ project.description }}
+          </div>
         </div>
-        <a class="card-link">Lees meer ➝</a></a
+        <span class="card-link">Lees meer ➝</span></a
       >
       {% endfor %}
     </div>

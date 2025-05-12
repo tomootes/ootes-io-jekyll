@@ -14,7 +14,8 @@
     }
 
     &:hover{
-        background: $brand-primary-light;
+        // border: 5px solid $brand-primary-light;
+        box-shadow: 0 0 0 2px $brand-primary-light;
         .card-header {
             &__image{
                 border-bottom: 1px solid white;
@@ -40,7 +41,7 @@
 
             img {
                 max-height: 5.5rem;
-                max-width: 100%;
+                max-width: 90%;
             }
 
             border-bottom: 1px solid $brand-primary;
@@ -58,6 +59,9 @@
         margin: 1rem auto .75rem;
         font-size: $font-size-sm;
         width: 80%;
+        p {
+            margin-bottom: 1rem;
+        }
     }
 
     .card-block {
@@ -70,12 +74,7 @@
         width: 100%;
         color: $brand-primary-dark;
         font-size: $font-size-sm;
-
-        // &:hover{
-        //     background: $brand-primary;
-        //     color: white;
-        // }
-   
+        text-decoration: underline;   
     }
 
     @media (min-width: $break-sm) {

@@ -2,11 +2,13 @@
 client: "Ministerie van Volksgezondheid, Welzijn en Sport"
 url: "vws"
 date: "2021-05-24"
-name: "Front-end developer - BCO-Portaal"
+project_name: "BCO-Portaal"
 img: "img/vws.jpg"
+role: "Front-end developer"
 techniques:
   ["VueJS", "TypeScript", "Vue-Test-Utils", "Jest", "SCSS", "Vue-Formulate"]
 type: "Single-page application"
+description: "Tijdens de covid-pandemie werkte ik aan het bron- en contactonderzoek portaal voor VWS."
 ---
 
 Een belangrijke pijler voor de aanpak van covid-19 in Nederland was het bron- en contactonderzoek. Hiervoor ontwikkelde het VWS in-house zelf een bron- en contactonderzoekportaal.

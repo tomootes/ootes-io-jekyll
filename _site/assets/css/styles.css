@@ -130,14 +130,6 @@ h6 {
 html {
   font-family: "Open Sans"; }
 
-p {
-  font-weight: lighter;
-  line-height: 1.75;
-  font-size: 1rem; }
-  p a {
-    color: #0DE5A8;
-    text-decoration: underline; }
-
 .btn {
   padding: .75rem 1.25rem;
   background: #32f3bd;
@@ -168,7 +160,8 @@ button:focus {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  background: rgba(13, 229, 168, 0.8); }
   .navbar .navbar-content {
     display: flex;
     justify-content: space-between; }
@@ -188,8 +181,8 @@ button:focus {
       .navbar .navbar-nav .nav-item a {
         font-size: 1rem;
         color: white; }
-  .navbar.active {
-    background: rgba(13, 229, 168, 0.8); }
+  .navbar--coloured {
+    background: #0DE5A8; }
 
 .card {
   text-align: center;
@@ -204,7 +197,7 @@ button:focus {
     .card {
       margin-bottom: 0; } }
   .card:hover {
-    background: #32f3bd; }
+    box-shadow: 0 0 0 2px #32f3bd; }
     .card:hover .card-header__image {
       border-bottom: 1px solid white; }
     .card:hover .card-header__title {
@@ -221,7 +214,7 @@ button:focus {
       border-bottom: 1px solid #0DE5A8; }
       .card .card-header__image img {
         max-height: 5.5rem;
-        max-width: 100%; }
+        max-width: 90%; }
     .card .card-header__title {
       font-size: 1.35rem;
       color: #0DE5A8; }
@@ -229,12 +222,15 @@ button:focus {
     margin: 1rem auto .75rem;
     font-size: 0.875rem;
     width: 80%; }
+    .card .card-text p {
+      margin-bottom: 1rem; }
   .card .card-block .card-title {
     font-weight: 500; }
   .card-link {
     width: 100%;
     color: #099d73;
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    text-decoration: underline; }
   @media (min-width: 600px) {
     .card {
       width: 100%; } }
@@ -287,14 +283,6 @@ h6 {
 
 html {
   font-family: "Open Sans"; }
-
-p {
-  font-weight: lighter;
-  line-height: 1.75;
-  font-size: 1rem; }
-  p a {
-    color: #0DE5A8;
-    text-decoration: underline; }
 
 body {
   transition: all 0.2s ease-in-out;
