@@ -2,9 +2,9 @@
 client: "Summer School Utrecht"
 url: "utrechtsummerschool"
 date: "2019-12-02"
-project_name: "Ontwikkeling platform"
+project_name: "Back-office"
 role: "Developer"
-img: "img/uss_logo.svg"
+img: "/assets/img/uss_logo.svg"
 address: "https://utrechtsummerschool.nl"
 techniques: ["PHP", "Symfony", "Webpack", "JS", "SCSS"]
 type: "Platform"

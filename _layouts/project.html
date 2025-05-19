@@ -2,10 +2,39 @@
 <html lang="nl">
   {% include head.html %} {% include nav.html background="coloured" %}
   {% include hero.html collapsed="true" project_title=page.client %}
-  <div class="container mt-12">
-      <main>
+  <div class="container mt-12 max-w-2xl">
+      <main class="project-content">
+
+        <div class="flex justify-center mb-8">
+          <img class="w-md" src="{{ page.img }}" alt="Project logo">
+        </div>
+
+        <h2 class="text-xl mb-6"> <b>{{ page.project_name }}</b> // {{page.role }}</h2>
+
         {{content}}
+
+        {% if page.activities %}
+        <h2 class="text-xl mb-2 font-medium">Activiteiten</h2>
+         <ul class="list-disc pl-6">
+            {% for activity in page.activities %}
+              <li>{{ activity }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if page.screenshots %}
+          <h2 class="text-xl mt-8 font-medium">Screenshots</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {% for screenshot in page.screenshots %}
+              <img src="{{ screenshot }}" alt="Screenshot" class="w-full rounded-lg shadow-md">
+            {% endfor %}
+          </div>
+        {% endif %}
       </div>
     </main>
   </div>
+  <div class="container mt-12">
+    <div><a href="/" class="underline">← terug naar projecten</a></div>
+  </div>
+  {% include footer.html %}
 </html>

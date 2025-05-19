@@ -2,15 +2,22 @@
 client: "Developer.overheid.nl"
 url: "don"
 date: "2023-04-04"
-project_name: "Developer.overheid.nl"
+project_name: "Developer Portal"
 role: "Developer Advocate"
-img: "img/don.png"
+img: "/assets/img/don.png"
 address: "https://volteuropa.org"
 techniques: ["Docusaurus", "JSX", "SCSS", "Python", "Tailwind"]
 type: "Website"
+activities: [
+    "Contact met afnemende organisaties",
+    "Presentaties",
+    "Developer contact op Mastodon/ LinkedIN",
+    "Schrijven van blogs/ opinie"
+]
 description: "Ik help meebouwen aan het developer portal van de Nederlandse overheid."
 ---
 
-Vanuit mijn geloof dat we veel meer kunnen bereiken als we binnen de Nederlandse overheid meer samenwerken ben ik voor developer.overheid.nl gaan werken. 
+Tijdens mijn werkzaamheden bij het Ministerie van Volksgezondheid kwam ik erachter dat er weinig naslagwerken beschikbaar zijn voor de developer bij de overheid. Het voelde gek om technische keuzes te maken terwijl ik niet goed wist wat de voorgeschreven keuzes waren, of waar andere organisaties goede ervaringen mee hadden. 
 
-Developer.overheid.nl is opgezet om developers te helpen bij het ontwikkelen van software voor de publieke sector. 
+Ik wist dat er binnen andere overheids-organisaties mensen voor de zelfde keuzes stonden, maar ik niet met ze kon afstemmen. Ook kon ik hun code veelal niet inzien. Toen ik erachter kwam dat er een overheidsproject was dat precies dit probeert op te lossen, en tutorials en tools beschikbaar maakt voor de developer in die situatie, sloot ik me daarbij aan
+

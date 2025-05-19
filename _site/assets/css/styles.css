@@ -30,10 +30,6 @@
   .intro #particles {
     height: 100%;
     width: 100%; }
-  .intro .text-wrapper {
-    width: 100%; }
-  .intro .vertical-center {
-    height: 100%; }
   .intro .overlay {
     position: absolute;
     width: 100%;
@@ -49,6 +45,8 @@
         justify-content: center;
         align-items: center;
         width: 100%; }
+        .intro .overlay .container .intro-text a {
+          z-index: 999; }
         .intro .overlay .container .intro-text .heading {
           text-align: center;
           margin: 0;
@@ -76,7 +74,8 @@
       height: 100%; }
     .intro.one-third .overlay .intro-text {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      z-index: 999; }
       .intro.one-third .overlay .intro-text .icon {
         margin: 0; }
       .intro.one-third .overlay .intro-text h3 {
@@ -99,7 +98,6 @@ footer {
     line-height: inherit !important; }
 
 body {
-  color: #464a4c;
   font-size: 100%; }
 
 h1, h2, h3, h4, h5 {
@@ -144,7 +142,7 @@ html {
     border: 0;
     box-shadow: none; }
   .btn.btn--white {
-    color: #0DE5A8;
+    color: #05543e;
     background: white;
     border: 0;
     box-shadow: none; }
@@ -192,18 +190,16 @@ button:focus {
   flex-direction: column;
   align-items: center;
   border: 1px solid #0DE5A8;
-  padding: .5rem 0 1.5rem; }
+  padding: 1.5rem; }
   @media only screen and (min-width: 600px) {
     .card {
       margin-bottom: 0; } }
   .card:hover {
     box-shadow: 0 0 0 2px #32f3bd; }
-    .card:hover .card-header__image {
-      border-bottom: 1px solid white; }
     .card:hover .card-header__title {
-      color: #099d73; }
+      font-weight: bolder; }
     .card:hover .card-link {
-      color: #05543e; }
+      font-weight: bolder; }
   .card .card-header {
     width: 80%; }
     .card .card-header__image {
@@ -217,7 +213,8 @@ button:focus {
         max-width: 90%; }
     .card .card-header__title {
       font-size: 1.35rem;
-      color: #0DE5A8; }
+      color: #0DE5A8;
+      line-height: 1.5; }
   .card .card-text {
     margin: 1rem auto .75rem;
     font-size: 0.875rem;
@@ -228,7 +225,6 @@ button:focus {
     font-weight: 500; }
   .card-link {
     width: 100%;
-    color: #099d73;
     font-size: 0.875rem;
     text-decoration: underline; }
   @media (min-width: 600px) {
@@ -253,7 +249,6 @@ button:focus {
     justify-content: center; }
 
 body {
-  color: #464a4c;
   font-size: 100%; }
 
 h1, h2, h3, h4, h5 {
@@ -283,6 +278,18 @@ h6 {
 
 html {
   font-family: "Open Sans"; }
+
+#particles {
+  background: linear-gradient(180deg, #0de5a8, #32f3bd); }
+
+.particles-js-canvas-el {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.project-content p {
+  margin-bottom: 2rem;
+  font-size: 1.125rem; }
 
 body {
   transition: all 0.2s ease-in-out;

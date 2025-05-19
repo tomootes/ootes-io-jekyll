@@ -3,7 +3,7 @@ client: "Ministerie van Volksgezondheid, Welzijn en Sport"
 url: "vws"
 date: "2021-05-24"
 project_name: "BCO-Portaal"
-img: "img/vws.jpg"
+img: "/assets/img/vws.jpg"
 role: "Front-end developer"
 techniques:
   ["VueJS", "TypeScript", "Vue-Test-Utils", "Jest", "SCSS", "Vue-Formulate"]
@@ -17,7 +17,7 @@ Mijn rol binnen het project was het ontwikkelen van nieuwe functionaliteit alsme
 
 In de loop van het project werd het almaar groeiende ontwikkelteam opgeknipt in vier scrum teams. Om de kwaliteit/ juiste opzet van de front-end te waarborgen was er veel communicatie nodig onder front-end developers en waren de lijntjes kort. Ook werd er een wekelijkse front-end meeting in het leven geroepen.
 
-### Taken
+### Werkzaamheden
 
 - Presenteren nieuw features (demo)
 - Spikes (Oriëntatie libary keuzes)

@@ -4,11 +4,12 @@ url: "gemeente_amsterdam"
 date: "2020-01-31"
 project_name: "Kies je kraam"
 role: "Developer"
-img: "img/gemeente-amsterdam.svg"
+img: "/assets/img/gemeente-amsterdam.svg"
 address: "https://www.amsterdam.nl/ondernemen/markt-straathandel/digitaal-indelen/"
+activities: ["Front-end development","Presenteren"]
 techniques: ["Typescript", "NodeJS", "React", "JS", "SCSS", "Postgres"]
 type: "Webapp"
-description: "In opdracht van TiltShift bouwde ik mee aan een webapp voor de straatmarkten in Amsterdam."
+description: "In opdracht van TiltShift bouwde ik mee aan een web-app voor de straatmarkten in Amsterdam."
 ---
 
 In opdracht van [TiltShift](http://www.tiltshift.nl) bouwde ik mee aan een webapp voor de straatmarkten in Amsterdam.

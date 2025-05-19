@@ -1,52 +1,6 @@
-#project{
-    .project-logo{
-        img {
-            
-            width: 35rem;
-            max-height: 10rem;
-            max-width: 100%;
-           
-            @media only screen and (min-width: $break-sm)  {
-                max-height: 25rem;
-            }
-        }
-        
-        @media only screen and (min-width: $break-sm)  {
-            margin-bottom: $gutter-large;
-        }
-
+.project-content{
+    p {
+        margin-bottom: 2rem;
+        font-size: 1.125rem;
     }
-    .project-content{
-        
-        @media only screen and (min-width: $break-sm)  {
-            padding-bottom: 7rem;
-        }
-
-    }
-    .project-title{
-        font-weight: 500;
-        small{
-            font-weight: 300;
-        }
-    }
-    .project-text{
-        margin-bottom: $gutter-small;
-    }
-    .project-tasks{
-        margin-bottom: $gutter-small;
-        ul {
-            list-style: disc;
-            padding: auto;
-            margin: 0 0 0 2rem;
-            li {
-                line-height: 1.5;
-            }
-        }
-    }
-    .screenshots{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start  ;
-    }
-
 }

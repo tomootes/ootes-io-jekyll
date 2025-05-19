@@ -8,29 +8,28 @@
     width: 100%;
   }
 
-  .text-wrapper{
-    width: 100%;
-  }
-
-  .vertical-center{
-    height: 100%;
-  }
-
   .overlay{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+
     .container{
       display: flex;
       height: 100%;
+      
       .intro-text{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
+
+        a {
+          z-index: 999;
+        }
+
         .heading{
           text-align: center;
           margin: 0;
@@ -74,6 +73,7 @@
       .intro-text{
         display: flex;
         flex-direction: column;
+        z-index: 999;
         .icon{
           margin: 0;
         }

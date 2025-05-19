@@ -6,13 +6,15 @@
   "scripts": {
     "build:css": "postcss assets/css/main.css -o assets/css/output.css",
     "watch:css": "postcss assets/css/main.css -o assets/css/output.css --watch",
-    "jekyll": "bundle exec jekyll serve"
+    "jekyll": "bundle exec jekyll serve",
+    "watch:js": "vite"
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.2.5",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.6",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^2.2.19",
+    "vite": "^6.3.5"
   },
   "devDependencies": {
     "postcss-cli": "^8.3.1"

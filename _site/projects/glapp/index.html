@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -40,7 +41,7 @@
         ></a
       >
       <ul class="navbar-nav">
-        <li class="nav-item"><a href="/about" class="nav-link">Over</a></li>
+        <li class="nav-item"><a href="/over" class="nav-link font-medium">Over</a></li>
       </ul>
     </div>
   </div>
@@ -55,32 +56,76 @@
         height="717"
       ></canvas>
     </div>
-    <div class="overlay">
+    <div class="overlay" id="particles-js">
       <div class="container">
         
-        <h2>Groenlinks</h2>
+          <span class="intro-text text-3xl font-medium">
+            <h2>Groenlinks</h2>
+          </span>
         
       </div>
     </div>
   </div>
   
-  <div class="container mt-12">
-      <main>
+  <div class="container mt-12 max-w-2xl">
+      <main class="project-content">
+
+        <div class="flex justify-center mb-8">
+          <img class="w-md" src="/assets/img/groenlinks.png" alt="Project logo">
+        </div>
+
+        <h2 class="text-xl mb-6"> <b>Glapp</b> // Front-end developer</h2>
+
         <p>Voor GroenLinks bouwde ik een web-app om deur tot deur campaigning efficiënter te maken.</p>
 
-<h3 id="screenshots">Screenshots</h3>
 
-<ul>
-  <li><img src="img/glapp/login.png" alt="login" /></li>
-  <li><img src="img/glapp/home.png" alt="home" /></li>
-  <li><img src="img/glapp/zoeken.png" alt="zoeken" /></li>
-  <li><img src="img/glapp/postcode.png" alt="postcode" /></li>
-  <li><img src="img/glapp/straat.png" alt="straat" /></li>
-  <li><img src="img/glapp/interview.png" alt="interview" /></li>
-  <li><img src="img/glapp/over.png" alt="over" /></li>
-</ul>
+        
 
+        
+          <h2 class="text-xl mt-8 font-medium">Screenshots</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+              <img src="/assets/img/glapp/login.png" alt="Screenshot" class="w-full rounded-lg shadow-md">
+            
+              <img src="/assets/img/glapp/home.png" alt="Screenshot" class="w-full rounded-lg shadow-md">
+            
+              <img src="/assets/img/glapp/zoeken.png" alt="Screenshot" class="w-full rounded-lg shadow-md">
+            
+              <img src="/assets/img/glapp/postcode.png" alt="Screenshot" class="w-full rounded-lg shadow-md">
+            
+              <img src="/assets/img/glapp/straat.png" alt="Screenshot" class="w-full rounded-lg shadow-md">
+            
+              <img src="/assets/img/glapp/interview.png" alt="Screenshot" class="w-full rounded-lg shadow-md">
+            
+              <img src="/assets/img/glapp/over.png" alt="Screenshot" class="w-full rounded-lg shadow-md">
+            
+          </div>
+        
       </div>
     </main>
   </div>
+  <div class="container mt-12">
+    <div><a href="/" class="underline">← terug naar projecten</a></div>
+  </div>
+  <footer class="section section--smaller mt-8">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 flex-center">
+        <a
+          target="_blank"
+          href="https://github.com/tomootes"
+          class="icon icon-logo-github"
+        ></a>
+        <a href="tel:+31623447230" class="icon icon-phone-5"></a>
+        <a href="mailto:tomootes@gmail.com" class="icon icon-email"></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/tootes/"
+          class="icon icon-logo-linkedin"
+        ></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </html>

@@ -7,15 +7,17 @@
         height="717"
       ></canvas>
     </div>
-    <div class="overlay">
+    <div class="overlay" id="particles-js">
       <div class="container">
-        {% if include.collapsed == "true" %}
-        <h2>{{include.project_title}}</h2>
+        {% if include.project_title %}
+          <span class="intro-text text-3xl font-medium">
+            <h2>{{include.project_title}}</h2>
+          </span>
         {% else %}
-        <span class="intro-text"><span class="icon icon-greenhouse"></span>
-          <h2 class="heading text-3xl">Developer met oog voor het grotere plaatje</h2>
-          <a href="#/about"
-            ><button type="button" class="btn btn--white">
+        <span class="intro-text flex">
+          <h2 class="heading text-3xl font-medium mb-6">Developer met oog voor het grotere plaatje</h2>
+          <a href="/over"
+            ><button type="button" class="btn btn--white mt-10">
               Samen werken aan het web?
             </button></a
           ></span
