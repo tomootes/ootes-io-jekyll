@@ -1,6 +1,6 @@
-<div class="section point-section py-16">
+<div class="section point-section pt-16">
   <div class="container">
-    <h1 class="section--heading flex-center mb-6 text-2xl text-center">Opdrachtgevers</h1>
+    <h1 class="section--heading flex-center mb-6 text-2xl text-center font-bold">Opdrachtgevers</h1>
     <div class="grid grid-cols-3 gap-4">
       {% assign sorted_projects = site.projects | sort: "date" %}
       {% for project in sorted_projects reversed %}

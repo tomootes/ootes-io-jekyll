@@ -90,7 +90,8 @@
 footer {
   background: #eceeef;
   color: #636c72;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   display: flex;
   justify-content: center; }
   footer .icon {
@@ -196,6 +197,9 @@ button:focus {
       margin-bottom: 0; } }
   .card:hover {
     box-shadow: 0 0 0 2px #32f3bd; }
+    .card:hover .card-header__image {
+      box-shadow: 0 0 0 3px #32f3bd;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .card:hover .card-header__title {
       font-weight: bolder; }
     .card:hover .card-link {
@@ -290,6 +294,17 @@ html {
 .project-content p {
   margin-bottom: 2rem;
   font-size: 1.125rem; }
+
+.blog > div {
+  margin-bottom: 1.75rem;
+  display: flex;
+  flex-direction: column; }
+  .blog > div code {
+    margin-top: 8px; }
+  .blog > div a {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #01689b; }
 
 body {
   transition: all 0.2s ease-in-out;

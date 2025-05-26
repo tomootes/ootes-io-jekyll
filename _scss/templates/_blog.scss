@@ -1,0 +1,16 @@
+.blog {
+  > div {
+    margin-bottom: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    code {
+      margin-top: 8px;
+    }
+    a {
+      // margin-left: .75rem;
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: rgb(1, 104, 155);
+    }
+  }
+}
