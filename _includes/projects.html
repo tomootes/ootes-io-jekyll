@@ -1,7 +1,7 @@
 <div class="section point-section pt-16">
   <div class="container">
     <h1 class="section--heading flex-center mb-6 text-2xl text-center font-bold">Opdrachtgevers</h1>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="md:grid grid-cols-3 gap-6">
       {% assign sorted_projects = site.projects | sort: "date" %}
       {% for project in sorted_projects reversed %}
       <a href="{{ project.url }}" class="card p-4"

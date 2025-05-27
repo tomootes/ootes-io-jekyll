@@ -1,7 +1,7 @@
 .card {
 
     text-align: center;
-    width: calc(100% - (2 * #{$gutter}) );
+    // width: calc(100% - (2 * #{$gutter}) );
     margin: 0 auto $gutter;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
 
     .card-header {
         
-        width: 80%;
+        width: 100%;
 
         &__image {
             height: 7rem;
@@ -63,7 +63,7 @@
     .card-text {
         margin: 1rem auto .75rem;
         font-size: $font-size-sm;
-        width: 80%;
+        // width: 80%;
         p {
             margin-bottom: 1rem;
         }

@@ -185,7 +185,6 @@ button:focus {
 
 .card {
   text-align: center;
-  width: calc(100% - (2 * 3rem) );
   margin: 0 auto 3rem;
   display: flex;
   flex-direction: column;
@@ -205,7 +204,7 @@ button:focus {
     .card:hover .card-link {
       font-weight: bolder; }
   .card .card-header {
-    width: 80%; }
+    width: 100%; }
     .card .card-header__image {
       height: 7rem;
       display: flex;
@@ -221,8 +220,7 @@ button:focus {
       line-height: 1.5; }
   .card .card-text {
     margin: 1rem auto .75rem;
-    font-size: 0.875rem;
-    width: 80%; }
+    font-size: 0.875rem; }
     .card .card-text p {
       margin-bottom: 1rem; }
   .card .card-block .card-title {
