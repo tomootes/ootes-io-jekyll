@@ -185,16 +185,21 @@ button:focus {
 
 .card {
   text-align: center;
-  margin: 0 auto 3rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #0DE5A8;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  transition: box-shadow 0.2s ease-in-out; }
   @media only screen and (min-width: 600px) {
     .card {
       margin-bottom: 0; } }
+  .card .card-header__image {
+    transition: box-shadow 0.2s ease-in-out; }
   .card:hover {
+    background-color: #f3fefb;
     box-shadow: 0 0 0 2px #32f3bd; }
     .card:hover .card-header__image {
       box-shadow: 0 0 0 3px #32f3bd;
@@ -219,6 +224,7 @@ button:focus {
       color: #0DE5A8;
       line-height: 1.5; }
   .card .card-text {
+    transition: font-weight 0.2s ease-in-out;
     margin: 1rem auto .75rem;
     font-size: 0.875rem; }
     .card .card-text p {

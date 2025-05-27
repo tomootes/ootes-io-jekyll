@@ -1,10 +1,10 @@
 <div class="section point-section pt-16">
   <div class="container">
     <h1 class="section--heading flex-center mb-6 text-2xl text-center font-bold">Opdrachtgevers</h1>
-    <div class="md:grid grid-cols-3 gap-6">
+    <div class="md:grid grid-cols-3 gap-8">
       {% assign sorted_projects = site.projects | sort: "date" %}
       {% for project in sorted_projects reversed %}
-      <a href="{{ project.url }}" class="card p-4"
+      <a href="{{ project.url }}" class="card mb-4 md:mb-0 w-80 md:w-full p-4"
         ><div class="card-header">
           <div class="card-header__image">
             <img
@@ -13,8 +13,8 @@
               class="card-img-top img-fluid"
             />
           </div>
-          <h3 class="card-header__title mb-2">{{ project.project_name }}</h3>
-          <i>{{ project.role }}</i>
+          <h3 class="card-header__title mb-2 font-bold">{{ project.project_name }}</h3>
+          <i class="font-bold">{{ project.role }}</i>
         </div>
         <div class="card-block">
           <div class="card-text text-left">
