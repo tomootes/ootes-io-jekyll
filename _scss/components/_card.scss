@@ -27,7 +27,8 @@
         .card-header {                // color: $brand-primary-dark;
             &__image{
                 box-shadow: 0 0 0 3px $brand-primary-light;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                background-color: white;
             }
             &__title{
                 font-weight: bolder;
