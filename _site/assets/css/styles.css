@@ -97,6 +97,11 @@ footer {
   footer .icon {
     padding: 1rem;
     line-height: inherit !important; }
+  footer .link-list a {
+    text-decoration: underline; }
+    footer .link-list a:hover {
+      color: black;
+      text-decoration: underline; }
 
 body {
   font-size: 100%; }
@@ -203,7 +208,8 @@ button:focus {
     box-shadow: 0 0 0 2px #32f3bd; }
     .card:hover .card-header__image {
       box-shadow: 0 0 0 3px #32f3bd;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: white; }
     .card:hover .card-header__title {
       font-weight: bolder; }
     .card:hover .card-link {

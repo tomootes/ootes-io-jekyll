@@ -9,4 +9,14 @@ footer{
     padding: 1rem;
     line-height: inherit !important;
   }
+
+  .link-list{
+    a {
+      text-decoration: underline;
+      &:hover{
+        color: black;
+        text-decoration: underline;
+      }
+    }
+  }
 }
