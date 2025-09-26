@@ -1,14 +1,15 @@
 .container{
 
-  width: calc( 100% - 2rem );
+  width: calc(100% - 2rem );
   margin: 0 auto;
   position: relative;
 
-  @media(min-width: $break-sm){  
-    width: calc( 100% - ( 2* #{$gutter-large}) );
+  @media(min-width: $break-sm){
+    width: calc( 100% - ( 2* var(--gutter-large)) );
   }
 
-  @media(min-width: $break-md){  
+  @media(min-width: $break-md){
+    // background-color: aqua;  
     width: 50rem;
   }
 

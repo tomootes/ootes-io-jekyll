@@ -1,48 +1,52 @@
-// Start with assigning color names to specific hex values.
-$red:    #EC6862 !default;
-$orange: #EC8762 !default;
-$yellow: #ECE362 !default;
-$green:  #95EC62 !default;
-$dark-green: #039E96 !default;
-$mint-green: #65ecb9 !default;
-$mint-green-darker: #38e6a4 !default;
-$blue:   #7FC0EC !default;
-$teal:   #5bc0de !default;
-$pink:   #ff5b77 !default;
-$purple: #613d7c !default;
+:root {
+  // Start with assigning color names to specific hex values.
+  --red: #EC6862;
+  --orange: #EC8762;
+  --yellow: #ECE362;
+  --green: #95EC62;
+  --dark-green: #039E96;
+  --mint-green: #65ecb9;
+  --mint-green-darker: #38e6a4;
+  --blue: #7FC0EC;
+  --teal: #5bc0de;
+  --pink: #ff5b77;
+  --purple: #613d7c;
 
-// Create grayscale
-$gray-dark:                 #292b2c !default;
-$gray:                      #464a4c !default;
-$gray-light:                #636c72 !default;
-$gray-lighter:              #eceeef !default;
-$gray-lightest:             #f7f7f9 !default;
+  // Create grayscale
+  --gray-dark: #292b2c;
+  --gray: #464a4c;
+  --gray-light: #636c72;
+  --gray-lighter: #eceeef;
+  --gray-lightest: #f7f7f9;
 
-//
-$transparent-white: transparentize(white, .6);
+  // Transparent colors
+  --transparent-white: rgba(255, 255, 255, 0.4);
 
-// Reassign color vars to semantic color scheme
-// $brand-primary:            lighten( #38e6a4, 5%) !default;
-$brand-primary: turquoise;
-$brand-primary: #0DE5A8;
-$brand-success:             $green !default;
-$brand-info:                $teal !default;
-$brand-warning:             $orange !default;
-$brand-danger:              $red !default;
-$brand-inverse:             $gray-dark !default;
+  // Reassign color vars to semantic color scheme
+  --brand-primary: #0DE5A8;
+  --brand-success: var(--green);
+  --brand-info: var(--teal);
+  --brand-warning: var(--orange);
+  --brand-danger: var(--red);
+  --brand-inverse: var(--gray-dark);
 
-$brand-primary-transparent: transparentize($brand-primary, .2);
-$brand-primary-light: lighten($brand-primary, 10%);
-$brand-primary-lighter: lighten($brand-primary, 30%);
-$brand-primary-dark: darken($brand-primary, 15%);
-$brand-primary-darker: darken($brand-primary, 30%);
+  // Brand primary variations (manually calculated from #0DE5A8)
+  --brand-primary-transparent: rgba(13, 229, 168, 0.8);
+  --brand-primary-light: #24e8b4;
+  --brand-primary-lighter: #6beed0;
+  --brand-primary-dark: #0bc196;
+  --brand-primary-darker: #089975;
 
+
+  // Spacing/Gutters
+  --gutter-large: 5rem;
+  --gutter: 3rem;
+  --gutter-small: 2rem;
+  --gutter-xs: 1rem;
+}
+
+// Breakpoints
 $break-sm: 600px;
-$break-md: 900px;
 $break-lg: 1200px;
+$break-md: 900px;
 $break-xl: 1700px;
-
-$gutter-large: 5rem;
-$gutter: 3rem;
-$gutter-small: 2rem;
-$gutter-xs: 1rem;

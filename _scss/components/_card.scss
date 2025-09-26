@@ -6,11 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid $brand-primary;
+    border: 1px solid var(--brand-primary);
     padding: 1.5rem;
     transition: box-shadow 0.2s ease-in-out;
 
-    @media only screen and (min-width: $break-sm)  {
+    @media only screen and (min-width: var(--break-sm))  {
         margin-bottom: 0;
     }
 
@@ -22,16 +22,17 @@
  
 
     &:hover{
-        background-color: lighten($brand-primary, 50%);
-        box-shadow: 0 0 0 2px $brand-primary-light;
+        background-color: var(--brand-primary-lighter);
+        box-shadow: 0 0 0 2px var(--brand-primary-light);
         .card-header {                // color: $brand-primary-dark;
             &__image{
-                box-shadow: 0 0 0 3px $brand-primary-light;
+                box-shadow: 0 0 0 3px var(--brand-primary-light);
                 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                 background-color: white;
             }
             &__title{
                 font-weight: bolder;
+                color: var(--brand-primary-darker);
             }
         }
         .card-link{
@@ -55,14 +56,14 @@
                 max-width: 90%;
             }
 
-            border-bottom: 1px solid $brand-primary;
+            border-bottom: 1px solid var(--brand-primary);
 
         }
 
         &__title{
-            // text-align: left;
-            font-size: $font-size-lg;
-            color: $brand-primary;
+            margin-top: 1rem;
+            font-size: var(--font-size-lg);
+            color: var(--brand-primary);
             line-height: 1.5;
         }
     }
@@ -70,7 +71,7 @@
     .card-text {
         transition: font-weight 0.2s ease-in-out;
         margin: 1rem auto .75rem;
-        font-size: $font-size-sm;
+        font-size: var(--font-size-sm);
         // width: 80%;
         p {
             margin-bottom: 1rem;
@@ -86,11 +87,11 @@
     &-link {
         width: 100%;
         // color: $brand-primary-dark;
-        font-size: $font-size-sm;
+        font-size: var(--font-size-sm);
         text-decoration: underline;   
     }
 
-    @media (min-width: $break-sm) {
+    @media (min-width: var(--break-sm)) {
         width: 100%;
     }
 }
@@ -100,13 +101,13 @@
     display: flex;
     flex-direction: column;
 
-    @media only screen and (min-width: $break-sm)  {
+    @media only screen and (min-width: var(--break-sm))  {
         display: grid;
         grid-gap: 3rem;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media only screen and (min-width: $break-lg)  {
+    @media only screen and (min-width: var(--break-lg))  {
         display: grid;
         grid-gap: 3rem;
         grid-template-columns: repeat(4, 1fr);

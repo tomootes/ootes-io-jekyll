@@ -12,7 +12,7 @@
       justify-content: center;
       flex-direction: column;
       // @include heading();
-      font-size: $font-size-lg;
+      font-size: var(--font-size-lg);
       color: white;
     }
     display: flex;
@@ -26,15 +26,15 @@
       justify-content: center;
       align-items: center;
       a{
-        font-size: $font-size-base;
+        font-size: var(--font-size-base);
         color: white;
         // @include heading();
       }
     }
   }
   &--coloured{
-    background: $brand-primary;
+    background: var(--brand-primary);
   }
 
-  background: $brand-primary-transparent;
+  background: var(--brand-primary-transparent);
 }

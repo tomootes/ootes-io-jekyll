@@ -86,9 +86,9 @@
       .flex-center{
 
         align-items: flex-end;
-        margin-bottom: $gutter-small;
+        margin-bottom: var(--gutter-small);
 
-        @media only screen and (min-width: $break-sm)  {
+        @media only screen and (min-width: var(--break-sm))  {
           align-items: center;
         }
 

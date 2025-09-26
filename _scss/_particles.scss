@@ -1,5 +1,5 @@
 #particles{
-  background: linear-gradient(180deg, darken($brand-primary, 0%), lighten($brand-primary, 10%));
+  background: linear-gradient(180deg, var(--brand-primary), var(--brand-primary), 10%);
 }
 
 .particles-js-canvas-el{

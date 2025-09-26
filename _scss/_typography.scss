@@ -14,10 +14,10 @@ $h5-font-size: 1.25rem !default;
 $h6-font-size: 1rem !default;
 
 $heading-family: 'JetBrains Mono';
-$body-family: 'Open Sans';
+$body-family: monospace;
 
 body{
-  // color: $gray;
+  font-family: $body-family;
   font-size: 100%;
 }
 

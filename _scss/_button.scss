@@ -1,23 +1,23 @@
 .btn {
 	// border-radius: 3px;
 	padding: .75rem 1.25rem;
-	background: $brand-primary-light;
+	background: var(--brand-primary-light);
 	cursor: pointer;
 	border: 0;
 	letter-spacing: 1px;
 	font-size: 0.875rem;
 	// box-shadow: 3px 3px 0 darken($brand-primary, 10%);
 	color: white;
-	border: 1px solid $brand-primary;
+	border: 1px solid var(--brand-primary);
 
 	&.btn--light{
-		background: lighten($brand-primary, 20%);
+		background: var(--brand-primary-lighter);
 		border: 0;
 		box-shadow: none;
 	}
 
 	&.btn--white{
-		color: $brand-primary-darker;
+		color: var(--brand-primary-darker);
 		background: white;
 		border: 0;
 		box-shadow: none;

@@ -1,23 +1,17 @@
 @import 'variables';
-
 @import 'container';
 @import 'intro';
 @import 'footer';
-
 @import 'typography';
-
 @import 'button';
-
-@import 'components/particles';
-
-@import 'components/navbar';
-
-@import 'components/card';
-
 @import 'typography';
-
 @import 'particles';
 
+@import 'components/particles';
+@import 'components/navbar';
+@import 'components/card';
+
+@import 'templates/about';
 @import 'templates/project';
 @import 'templates/blog';
 
