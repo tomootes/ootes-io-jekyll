@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+  {% include head.html %} {% include nav.html background="coloured" %}
+  {% include hero.html collapsed="true" project_title=page.title %}
+  <div class="container mt-12 max-w-2xl">
+      <main class="project-content">
+
+
+        <!-- <div class="flex justify-center mb-8">
+          <img  src="{{ page.img }}" alt="Project logo">
+        </div> -->
+
+        <iframe class="mb-12" width="560" height="315" src="https://www.youtube.com/embed/K5pGjX4e6cU?si=6mYtnIFKpRWZJaCK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <code class="flex font-bold mb-6">{{ page.date  | date: "%b %d, %Y" }}</code>
+
+
+        {{content}}
+
+        {% if page.activities %}
+        <h2 class="text-xl mb-2 font-medium">Activiteiten</h2>
+         <ul class="list-disc pl-6">
+            {% for activity in page.activities %}
+              <li>{{ activity }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if page.screenshots %}
+          <h2 class="text-xl mt-8 font-medium">Screenshots</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {% for screenshot in page.screenshots %}
+              <img src="{{ screenshot }}" alt="Screenshot" class="w-full rounded-lg shadow-md">
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </main>
+  </div>
+  <div class="container mt-12">
+    <div><a href="/" class="underline">← terug naar projecten</a></div>
+  </div>
+  {% include footer.html %}
+      <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</html>

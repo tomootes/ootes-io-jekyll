@@ -28,6 +28,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name/
+  talks:
+    output: true
+    permalink: /:collection/:name/
 
 defaults:
   - scope:
@@ -35,3 +38,8 @@ defaults:
       type: projects
     values:
       layout: project
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
