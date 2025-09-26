@@ -12,8 +12,6 @@
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.2.5",
     "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.6",
-    "tailwindcss": "^2.2.19",
     "vite": "^6.3.5"
   },
   "devDependencies": {
