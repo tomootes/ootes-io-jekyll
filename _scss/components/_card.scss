@@ -42,11 +42,15 @@
     }
 
     .card-header {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
         
         width: 100%;
 
         &__image {
             height: 7rem;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -62,6 +66,7 @@
 
         &__title{
             margin-top: 1rem;
+            margin-bottom: .5rem;
             font-size: var(--font-size-lg);
             color: var(--brand-primary);
             line-height: 1.5;
