@@ -10,7 +10,7 @@ Working Open Source requires that we are able to find other Open Source projects
 
 Instead of building software themselves, organizations should first explore the landscape before they take any further steps. However, not all OSS projects within the public sector (and at suppliers) are findable.
 
-There is a positive trend now in Europe: several OSS catalogues have been launched in the EU in recent years. These catalogues (FR/ DE/ EU/ and IT) have one thing in common: their underlying data-schema is publiccode.yml.
+There is a positive trend though in Europe: several OSS catalogues have been launched in the EU in recent years. These catalogues (FR/ DE/ EU/ and IT) have one thing in common: their underlying data-schema is publiccode.yml.
 
 Currently some types of Open Source projects are not easily described by the publiccode.yml standard. These are smaller building blocks like APIs and components/modules. The "categories" property for example, now only contains categories that are applicable to large applications.
 
