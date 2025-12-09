@@ -10,6 +10,14 @@ footer{
     line-height: inherit !important;
   }
 
+  ul{
+    list-style: none;
+  }
+
+  ul li ::marker{
+    display: none;
+  }
+
   .link-list{
     a {
       text-decoration: underline;
