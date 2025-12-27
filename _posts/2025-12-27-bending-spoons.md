@@ -10,7 +10,15 @@ date: 2025-12-27
 Bending spoons is een investeringsmaatschappij uit Italië die de afgelopen jaren
 allerlei apps en platformen heeft gekocht. Ondertussen wordt hun portefeuille
 bevolkt door een aantal grote apps zoals: WeTransfer, Komoot, Evernote maar ook
-Meetup.com. Ook ik merkte zo
+Meetup.com. Ook ik merkte op dat toen ik in 2024 begon met het organiseren van
+developer meetups (Flex@Dev.loer) via Meetup.com dat sommige features uitermate
+brak waren. Zo wilde ik graag alle deelnemers van de Meetup een mail sturen
+
+Als ik een mail stuurde naar de helpdesk kreeg ik pas na lange tijd antwoord en
+de b
+
+Het geinige, achteraf kwam ik erachter dat die periode Meetup.com
+[net was overgenomen door Bending Spoons](https://www.meetup.com/blog/a-new-home-for-meetup/).
 
 ## Strategie
 
