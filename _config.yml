@@ -1,8 +1,8 @@
 title: Tom Ootes
 description: Tom Ootes is een geëngageerde software-developer, werkzaam voor de Nederlandse overheid.
 author: Tom Ootes
-email:  tom@ootes.io
-baseurl: "https://ootes.io"
+email: tom@ootes.io
+baseurl: ""
 url: "http://example.com"
 markdown: kramdown
 plugins:

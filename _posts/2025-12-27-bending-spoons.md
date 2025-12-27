@@ -5,6 +5,7 @@ description:
   "Over hoe Bending Spoons als investeringsfonds apps overneemt en de digitale
   economie schaadt."
 date: 2025-12-27
+published: false
 ---
 
 Bending spoons is een investeringsmaatschappij uit Italië die de afgelopen jaren
