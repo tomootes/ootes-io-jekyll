@@ -36,7 +36,7 @@ let config = {
       },
     },
     size: {
-      value: 3,
+      value: 4,
       random: true,
       anim: {
         enable: false,
@@ -64,6 +64,10 @@ let config = {
         enable: false,
         rotateX: 600,
         rotateY: 1200,
+      },
+      gravity: {
+        enable: true,
+        acceleration: 9.81,
       },
     },
   },

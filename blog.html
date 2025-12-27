@@ -6,8 +6,16 @@ title: Over
 {% include hero.html project_title="Blog" %}
 
 <div class="blog container py-16">
+  {% for post in site.posts %}
   <div>
-     <code>15-07-2025</code>
+    <code>{{ post.date | date: "%d-%m-%Y" }}</code>
+    <a href="{{ post.url | relative_url }}">
+      {{ post.title }}
+    </a>
+  </div>
+  {% endfor %}
+  <div>
+    <code>15-07-2025</code>
     <a href="https://developer.overheid.nl/blog/2025/07/15/nederlandse-digitaliseringsstrategie">
       Digitaal samenwerken als één overheid: wat de NDS vraagt van developers
     </a>
