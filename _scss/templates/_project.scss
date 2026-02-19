@@ -1,12 +1,29 @@
-.project-content{
-    p {
-        margin-bottom: 2rem;
-    }
-    p, li {
-        // font-family: Arial, Helvetica, sans-serif;
-        // font-family: "Spectral";
-        // margin-bottom: 2rem;
-        font-size: 1.25rem;
-    }
+.project-content {
+  p {
+    margin-bottom: 2rem;
+  }
+  p,
+  li {
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-family: "Spectral";
+    // margin-bottom: 2rem;
+    font-size: 1.25rem;
+  }
 
+  .technologies-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    .technology {
+      font-size: 1rem;
+      display: flex;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      flex-direction: row;
+      background: var(--gray-lighter);
+      color: var(--gray-light);
+    }
+  }
 }
