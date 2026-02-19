@@ -9,7 +9,15 @@
           <img class="w-md" src="{{ page.img }}" alt="Project logo">
         </div>
 
-        <h2 class="text-xl mb-6"> <b>{{ page.project_name }}</b> // <span class="text-lg">{{page.role }}</span></h2>
+        <h2 class="text-xl mb-4"> <b>{{ page.project_name }}</b> // <span class="text-lg">{{page.role }}</span></h2>
+
+        {% if page.technologies %}
+        <ul class="technologies-list">
+          {% for activity in page.technologies %}
+              <li class="technology">[{{ activity }}]</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
 
         {{content}}
 
