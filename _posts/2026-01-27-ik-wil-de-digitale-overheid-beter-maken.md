@@ -6,7 +6,7 @@ description:
   "Over hoe Bending Spoons als investeringsfonds apps overneemt en de digitale
   economie schaadt."
 date: 2026-01-27
-published: true
+published: false
 ---
 
 Toen ik op een nachtelijk uurtje mijn zoontje de fles aan het geven wa overviel
