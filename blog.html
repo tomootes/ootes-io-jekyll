@@ -6,8 +6,8 @@ title: Over
 {% include hero.html project_title="Blog" %}
 
 <div class="blog-list container py-16">
-  {% assign published_posts = site.posts | where: "published", true %}
-  {% for post in published_posts %}
+  {% assign published_posts = site.posts | where: "published", true %} {% for
+  post in published_posts %}
   <div>
     <code>{{ post.date | date: "%d-%m-%Y" }}</code>
     <a href="{{ post.url | relative_url }}"> {{ post.title }} </a>
