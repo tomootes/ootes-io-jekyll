@@ -1,0 +1,38 @@
+.text-content {
+  p {
+    margin-bottom: 2rem;
+  }
+  p,
+  li {
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-family: "Spectral";
+    // margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+
+  blockquote {
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  blockquote > p {
+    display: inline;
+  }
+  blockquote:before {
+    content: "“";
+  }
+  blockquote:after {
+    content: "”";
+  }
+
+  figure {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
