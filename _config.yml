@@ -1,9 +1,13 @@
 title: Tom Ootes
 description: Tom Ootes is een geëngageerde software-developer, werkzaam voor de Nederlandse overheid.
-author: Tom Ootes
-email: tom@ootes.io
+author:
+  name: Tom Ootes
+  email: tom@ootes.io
+lang: nl
+feed:
+  posts_limit: 20
 baseurl: ""
-url: "http://example.com"
+url: "https://ootes.io"
 markdown: kramdown
 plugins:
   - jekyll-feed

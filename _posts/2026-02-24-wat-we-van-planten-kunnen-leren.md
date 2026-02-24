@@ -154,9 +154,15 @@ lezen over hoe complex het wel niet is.
 ## De natuur is niet te evenaren
 
 Dit boek liet me inzien dat hoe meer je je verdiept in de natuur, hoe
+<<<<<<< HEAD
 onwaarschijnlijker het voelt dat we technieken uitvinden die zo geraffineerd
 zijn als de planten die we dag in dag uit om ons heen hebben. We zullen de
 natuur nooit evenaren. Planten zijn zo extreem efficiënt.
+=======
+onwaarschijnlijker het voelt dat we technieken zullen uitvinden die zo
+geraffineerd zijn als de planten die we dag in dag uit om ons heen hebben. We
+zullen de natuur nooit evenaren. Planten zijn zo extreem efficiënt.
+>>>>>>> 5c5db72 (fix: typo)
 
 En dat maakt dat je je nietig voelt. Maar aan de andere kant stemt het me op een
 gekke manier ook vrolijk, heel mijn leven lang kan ik me verdiepen in de natuur,
