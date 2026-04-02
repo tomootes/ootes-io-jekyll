@@ -5,22 +5,35 @@ title: Blog
 
 {% include hero.html project_title="Blog" %}
 <div class="blog-list container py-16">
-  <p class="blog-list__intro">Een overzicht van blogposts die ik heb geschreven — op deze site en elders.</p>
+  {% comment %}
+  <p class="blog-list__intro">
+    Een overzicht van blogposts die ik heb geschreven — op deze site en elders.
+  </p>
+  {% endcomment %}
   <ul class="blog-list__items">
-    {% for post in site.posts %}
-      {% if post.published %}
-      <li class="blog-list__item">
-        <time class="blog-list__date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%d-%m-%Y" }}</time>
-        {% if post.external_url %}
-          <a class="blog-list__link blog-list__link--extern" href="{{ post.external_url }}" target="_blank" rel="noopener">
-            {{ post.title }}
-            <span class="blog-list__extern-label">extern</span>
-          </a>
-        {% else %}
-          <a class="blog-list__link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% endif %}
-      </li>
+    {% for post in site.posts %} {% if post.published %}
+    <li class="blog-list__item">
+      <time
+        class="blog-list__date"
+        datetime="{{ post.date | date: '%Y-%m-%d' }}"
+        >{{ post.date | date: "%d-%m-%Y" }}</time
+      >
+      {% if post.external_url %}
+      <a
+        class="blog-list__link blog-list__link--extern"
+        href="{{ post.external_url }}"
+        target="_blank"
+        rel="noopener"
+      >
+        {{ post.title }}
+        <span class="blog-list__extern-label">extern</span>
+      </a>
+      {% else %}
+      <a class="blog-list__link" href="{{ post.url | relative_url }}"
+        >{{ post.title }}</a
+      >
       {% endif %}
-    {% endfor %}
+    </li>
+    {% endif %} {% endfor %}
   </ul>
 </div>

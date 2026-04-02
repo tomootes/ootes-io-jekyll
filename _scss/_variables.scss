@@ -1,13 +1,13 @@
 :root {
   // Start with assigning color names to specific hex values.
-  --red: #EC6862;
-  --orange: #EC8762;
-  --yellow: #ECE362;
-  --green: #95EC62;
-  --dark-green: #039E96;
+  --red: #ec6862;
+  --orange: #ec8762;
+  --yellow: #ece362;
+  --green: #95ec62;
+  --dark-green: #039e96;
   --mint-green: #65ecb9;
   --mint-green-darker: #38e6a4;
-  --blue: #7FC0EC;
+  --blue: #7fc0ec;
   --teal: #5bc0de;
   --pink: #ff5b77;
   --purple: #613d7c;
@@ -23,7 +23,7 @@
   --transparent-white: rgba(255, 255, 255, 0.4);
 
   // Reassign color vars to semantic color scheme
-  --brand-primary: #0DE5A8;
+  --brand-primary: #0de5a8;
   --brand-success: var(--green);
   --brand-info: var(--teal);
   --brand-warning: var(--orange);
@@ -37,16 +37,18 @@
   --brand-primary-dark: #0bc196;
   --brand-primary-darker: #089975;
 
-
   // Spacing/Gutters
   --gutter-large: 5rem;
   --gutter: 3rem;
   --gutter-small: 2rem;
   --gutter-xs: 1rem;
 
-  --font-size-sm: .875rem;
+  --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
   --font-size-lg: 1.25rem;
+
+  // Content widths
+  --content-width: 58rem;
 }
 
 // Breakpoints
