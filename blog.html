@@ -1,73 +1,26 @@
 ---
 layout: default
-title: Over
+title: Blog
 ---
 
 {% include hero.html project_title="Blog" %}
 <div class="blog-list container py-16">
-  {% for post in site.posts %}
-    {% if post.published %}
-    <div>
-      <code>{{ post.date | date: "%d-%m-%Y" }}</code>
-      <a href="{{ post.url | relative_url }}"> {{ post.title }} </a>
-    </div>
-    {% endif %}
-  {% endfor %}
-  <div>
-    <code>15-07-2025</code>
-    <a
-      href="https://developer.overheid.nl/blog/2025/07/15/nederlandse-digitaliseringsstrategie"
-    >
-      Digitaal samenwerken als één overheid: wat de NDS vraagt van developers
-    </a>
-  </div>
-  <div>
-    <code>25-06-2025</code>
-    <a href="https://developer.overheid.nl/blog/2025/06/25/interview-haven">
-      Het team achter Haven+: "Onze exit-strategie weg van Big Tech"
-    </a>
-  </div>
-  <div>
-    <code>21-05-2025</code>
-    <a href="https://developer.overheid.nl/blog/2025/05/21/hoe-haven-jou-helpt/"
-      >Digitale Autonomie zonder Amerikaanse cloud met Haven(+)</a
-    >
-  </div>
-  <div>
-    <code>17-04-2025</code>
-    <a href="https://developer.overheid.nl/blog/2025/04/17/interview-vorijk"
-      >Vorderingenoverzicht Rijk: één overzicht met betalingsverplichtingen
-      dankzij de Common Ground principes</a
-    >
-  </div>
-  <div>
-    <code>26-03-2025</code>
-    <a
-      href="https://developer.overheid.nl/blog/2025/03/26/interview-kiesraad-rust"
-      >Deze goede redenen heeft de Kiesraad om Rust te gebruiken</a
-    >
-  </div>
-  <div>
-    <code>17-03-2025</code>
-    <a
-      href="https://developer.overheid.nl/blog/2025/03/17/hoe-overtuig-ik-mijn-manager/"
-      >Zo overtuig je je manager ervan dat open source werken slim is</a
-    >
-  </div>
-  <div>
-    <code>30-09-2024</code>
-    <a href="https://developer.overheid.nl/blog/2024/09/30/eilandvorming/">
-      5 nadelen van "eilandjesvorming" en 3 tips om onderlinge samenwerking te
-      stimuleren
-    </a>
-  </div>
-  <div>
-    <code>05-02-2024</code>
-    <a
-      href="https://developer.overheid.nl/blog/2024/02/05/de-kracht-van-open-source"
-    >
-      De kracht van Open Source: hoe jij als developer beleidsmensen overtuigt
-      van Open Source werken
-    </a>
-  </div>
+  <p class="blog-list__intro">Een overzicht van blogposts die ik heb geschreven — op deze site en elders.</p>
+  <ul class="blog-list__items">
+    {% for post in site.posts %}
+      {% if post.published %}
+      <li class="blog-list__item">
+        <time class="blog-list__date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%d-%m-%Y" }}</time>
+        {% if post.external_url %}
+          <a class="blog-list__link blog-list__link--extern" href="{{ post.external_url }}" target="_blank" rel="noopener">
+            {{ post.title }}
+            <span class="blog-list__extern-label">extern</span>
+          </a>
+        {% else %}
+          <a class="blog-list__link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% endif %}
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </div>

@@ -3,7 +3,6 @@ title: "Wat we van planten kunnen leren"
 description:
   "Ik las het boek The Light Eaters en het gaf me een nieuwe kijk op
   intelligentie."
-date: 2026-02-24
 published: true
 ---
 
