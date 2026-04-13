@@ -1,0 +1,43 @@
+publiccodeYmlVersion: "0.5.0"
+
+name: Tom Ootes Portfolio
+url: https://github.com/tomootes/ootes-io-jekyll
+landingURL: https://ootes.io
+softwareType: standalone/web
+developmentStatus: stable
+
+platforms:
+  - web
+
+categories:
+  - content-management
+
+description:
+  nl:
+    shortDescription: >-
+      Persoonlijke portfoliowebsite van Tom Ootes, een software-developer
+      werkzaam voor de Nederlandse overheid.
+    longDescription: |
+      Tom Ootes is een geëngageerde software-developer, werkzaam voor de
+      Nederlandse overheid. Deze portfoliowebsite bevat zijn blogposts,
+      projecten en lezingen. De site is gebouwd met Jekyll en Tailwind
+      CSS en gepubliceerd op ootes.io.
+    features:
+      - Blogposts over softwareontwikkeling en aanverwante onderwerpen
+      - Overzicht van projecten en lezingen
+      - Statische website gebouwd met Jekyll en Tailwind CSS
+
+legal:
+  license: CC-BY-4.0
+  mainCopyrightOwner: Tom Ootes
+
+maintenance:
+  type: internal
+  contacts:
+    - name: Tom Ootes
+      email: tom@ootes.io
+
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - nl

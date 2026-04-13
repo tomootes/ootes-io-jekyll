@@ -2,7 +2,7 @@
 client: "Ministerie van Volksgezondheid, Welzijn en Sport"
 url: "vws"
 date: "2021-05-24"
-project_name: "BCO-Portaal"
+project_name: "Bron- en contactonderzoekportaal"
 img: "/assets/img/vws.jpg"
 role: "Front-end developer"
 technologies:
