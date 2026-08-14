@@ -14,17 +14,18 @@ plugins:
   - jekyll-seo-tag
 sass:
   sass_dir: _scss
-exclude:
-  - "/node_modules"
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - package.json
-  - postcss.config.js
-  - tailwind.config.js
-  - _sass
-  - css
-  - js
+17 | exclude:
+18 |   - "/node_modules"
+19 |   - Gemfile
+20 |   - Gemfile.lock
+21 |   - README.md
+22 |   - package.json
+23 |   - postcss.config.js
+24 |   - tailwind.config.js
+25 |   - _sass
+26 |   - css
+27 |   - js
+28 |   - vendor
 
 collections:
   projects:
