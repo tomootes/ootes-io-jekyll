@@ -35,14 +35,14 @@ This repository contains the source code for **[ootes.io](https://ootes.io)** �
 - **SCSS** – Stylesheets compiled via PostCSS.
 - **PostCSS** – Handles autoprefixing and CSS processing.
 - **Vite** – Bundles JavaScript assets (`vite`).
-- **Yarn** – Package manager for Node dependencies.
+ 38: - **pnpm** – Package manager for Node dependencies.
 
 ---
 
 ## Prerequisites
 
 - **Ruby** (>= 2.7) with Bundler (`gem install bundler`).
-- **Node.js** (>= 18) and **Yarn** (`npm install -g yarn`).
+ 45: - **Node.js** (>= 18) and **pnpm** (`npm install -g pnpm`).
 - **pnpm** (optional, used in original docs for CSS watch).
 
 ---
@@ -58,7 +58,7 @@ cd ootes-io
 bundle install
 
 # Install Node dependencies
-yarn install
+ 61: pnpm install
 ```
 
 ---
@@ -69,12 +69,12 @@ The project uses **PostCSS** to compile `assets/css/main.css` into `assets/css/o
 
 ```bash
 # One‑time build
-yarn build:css
+ 72: pnpm run build:css
 
 # Watch for changes (recommended during development)
 # If you prefer pnpm, you can also run:
 # pnpm watch:css
-yarn watch:css
+ 77: pnpm run watch:css
 ```
 
 ---
@@ -135,20 +135,9 @@ Your markdown content goes here.
 
 ---
 
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/my‑feature`).
-3. Commit your changes and push the branch.
-4. Open a Pull Request describing the changes.
-
----
-
 ## License
 
-This project is licensed under the **Creative Commons Attribution 4.0 International (CC‑BY‑4.0)** license. See the `LICENSE` file for details. 
+This project is licensed under the **Creative Commons Attribution 4.0 International (CC‑BY‑4.0)** license. See the `LICENSE` file for details.
 
 ---
 
