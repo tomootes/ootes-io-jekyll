@@ -29,6 +29,8 @@ exclude:
   - js
   - vendor
 
+future: true
+
 collections:
   projects:
     output: true

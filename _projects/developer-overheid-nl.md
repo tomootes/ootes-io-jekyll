@@ -23,7 +23,7 @@ activities:
   [
     "Contact met afnemende organisaties",
     "Presentaties",
-    "Developer contact op Mastodon/ LinkedIN",
+    "Developer contact op Mastodon/ LinkedIn",
     "Schrijven van blogs/ opinie",
   ]
 description:

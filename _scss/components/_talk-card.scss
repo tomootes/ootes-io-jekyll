@@ -232,14 +232,13 @@
   }
 
   &__text {
-    flex-grow: 1;
-    margin-bottom: 0.75rem;
-    font-size: var(--font-size-sm);
+    margin-bottom: .75rem;
+    font-size: var(--font-size-md);
     color: var(--gray);
   }
 
   &__link {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     font-weight: bold;
     color: var(--brand-primary-darker);
   }
