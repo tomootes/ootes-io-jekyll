@@ -9,8 +9,16 @@
           <img  src="{{ page.img }}" alt="Project logo">
         </div> -->
 
-        <iframe class="w-full mb-8" width="560" height="315" src="https://www.youtube.com/embed/K5pGjX4e6cU?si=6mYtnIFKpRWZJaCK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        {% if page.video %}
+        <iframe class="w-full mb-8" width="560" height="315" src="{{ page.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        {% endif %}
         <code class="flex font-bold mb-6">{{ page.date  | date: "%b %d, %Y" }}</code>
+
+        {% if page.slides %}
+        <p>
+          <a href="{{ page.slides }}" class="btn btn--cta" target="_blank" rel="noopener">Bekijk de slides ➝</a>
+        </p>
+        {% endif %}
 
         {{content}}
 

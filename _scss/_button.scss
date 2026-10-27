@@ -16,6 +16,23 @@
 		box-shadow: none;
 	}
 
+	&.btn--cta{
+		display: inline-block;
+		padding: 1rem 1.75rem;
+		font-size: 1rem;
+		font-weight: bold;
+		color: var(--gray-dark);
+		background: var(--brand-primary);
+		border: 0;
+		transition: background 0.2s, transform 0.2s;
+
+		&:hover,
+		&:focus-visible{
+			background: var(--brand-primary-dark);
+			transform: translateY(-2px);
+		}
+	}
+
 	&.btn--white{
 		color: var(--brand-primary-darker);
 		background: white;

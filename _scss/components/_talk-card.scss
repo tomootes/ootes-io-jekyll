@@ -1,0 +1,328 @@
+.talk-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 2rem;
+  padding-top: 2.5rem; // room for the antennas
+  text-align: left;
+
+  // Cabinet
+  &__tv {
+    position: relative;
+    padding: 0.85rem 0.85rem 0;
+    border-radius: 1.25rem;
+    background: linear-gradient(
+      to bottom,
+      #3a3d3e,
+      var(--gray-dark) 30%
+    );
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+      0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  &__antennas {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      width: 9px;
+      height: 3rem;
+      background: radial-gradient(
+          circle at 50% 4.5px,
+          var(--gray-dark) 4px,
+          transparent 4.5px
+        ),
+        linear-gradient(
+          to right,
+          transparent 3px,
+          var(--gray-light) 3px,
+          var(--gray-light) 6px,
+          transparent 6px
+        );
+      transform-origin: 50% 100%;
+    }
+    &::before {
+      transform: translateX(-50%) rotate(-28deg);
+    }
+    &::after {
+      transform: translateX(-50%) rotate(22deg);
+    }
+  }
+
+  // Tube screen
+  &__slide {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 18% / 12%;
+    background: #111;
+    box-shadow: 0 0 0 4px #1b1c1d;
+
+    // Scanlines
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.18) 0,
+        rgba(0, 0, 0, 0.18) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+    }
+
+    // Vignette, glare and bezel depth
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      border-radius: inherit;
+      background: radial-gradient(
+          ellipse at 25% 15%,
+          rgba(255, 255, 255, 0.35),
+          transparent 40%
+        ),
+        radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.45));
+      box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+    background: white;
+    filter: saturate(0.6) brightness(0.8);
+    transition: filter 0.3s ease-in-out;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // On-screen display
+  &__osd {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    padding: 7% 11%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--brand-primary);
+    text-shadow: 0 0 1px #000, 0 0 6px var(--brand-primary);
+
+    > span {
+      position: absolute;
+    }
+  }
+
+  &__osd-channel {
+    top: 8%;
+    left: 11%;
+  }
+
+  &__osd-date {
+    top: 8%;
+    right: 11%;
+  }
+
+  &__osd-media {
+    bottom: 8%;
+    left: 11%;
+
+    span + span {
+      margin-left: 0.75rem;
+    }
+  }
+
+  &__osd-play {
+    top: 50%;
+    left: 50%;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  // Control strip
+  &__panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.25rem 0.7rem;
+  }
+
+  &__brand {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gray-light);
+  }
+
+  &__knobs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__knob {
+    position: relative;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #6b7072, #1b1c1d);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 50%;
+      width: 2px;
+      height: 40%;
+      background: var(--gray-lighter);
+      transform: translateX(-50%);
+    }
+  }
+
+  &__led {
+    width: 0.45rem;
+    height: 0.45rem;
+    margin-left: 0.25rem;
+    border-radius: 50%;
+    background: #3b2a2a;
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+
+  // Text below the TV
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 1.25rem;
+  }
+
+  &__event {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray-light);
+  }
+
+  &__title {
+    margin: 0.25rem 0 0.5rem;
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+    line-height: 1.4;
+    color: var(--gray-dark);
+    transition: color 0.2s ease-in-out;
+  }
+
+  &__text {
+    flex-grow: 1;
+    margin-bottom: 0.75rem;
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+  }
+
+  &__link {
+    font-size: var(--font-size-sm);
+    font-weight: bold;
+    color: var(--brand-primary-darker);
+  }
+
+  // Switch on
+  &:hover,
+  &:focus-visible {
+    .talk-card__picture {
+      filter: none;
+      animation: talk-card-power-on 0.35s ease-out;
+    }
+    .talk-card__slide::before {
+      animation: talk-card-flicker 0.35s steps(3);
+    }
+    .talk-card__osd-play {
+      opacity: 1;
+    }
+    .talk-card__knob:first-child {
+      transform: rotate(60deg);
+    }
+    .talk-card__led {
+      background: var(--brand-primary);
+      box-shadow: 0 0 6px var(--brand-primary);
+    }
+    .talk-card__title {
+      color: var(--brand-primary-darker);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover,
+    &:focus-visible {
+      .talk-card__picture,
+      .talk-card__slide::before {
+        animation: none;
+      }
+      .talk-card__knob:first-child {
+        transform: none;
+      }
+    }
+  }
+}
+
+@keyframes talk-card-power-on {
+  0% {
+    transform: scale(1, 0.02);
+    filter: brightness(3);
+  }
+  60% {
+    transform: scale(1, 1.03);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes talk-card-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.talk-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 3rem;
+
+  @media (min-width: $break-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.talks-section {
+  padding-top: 4rem;
+
+  &__more {
+    display: block;
+    margin-top: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+  }
+}

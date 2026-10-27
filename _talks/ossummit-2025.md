@@ -4,6 +4,7 @@ title: "Why Further Development on Publiccode.yml Is Necessary"
 tags: ["publiccode.yml", "open-source"]
 date: "2025-08-27"
 img: "/assets/img/talks/osssummit-2025.png"
+video: "https://www.youtube.com/embed/K5pGjX4e6cU?si=6mYtnIFKpRWZJaCK"
 ---
 
 Working on Open Source efficiently requires that we are able to find other Open

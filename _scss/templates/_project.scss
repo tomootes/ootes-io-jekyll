@@ -27,3 +27,31 @@
     }
   }
 }
+
+.project-content > ul:not([class]) {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding-left: 0;
+
+  li {
+    position: relative;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    margin-bottom: 0.5rem;
+    background: var(--gray-lightest);
+    border-left: 4px solid var(--brand-primary);
+  }
+
+  li::before {
+    content: "➝";
+    position: absolute;
+    left: 1rem;
+    color: var(--brand-primary-darker);
+    font-weight: bold;
+  }
+
+  code {
+    font-size: 0.9em;
+    padding: 0.1em 0.3em;
+    background: var(--gray-lighter);
+  }
+}

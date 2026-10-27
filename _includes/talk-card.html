@@ -1,0 +1,40 @@
+{% assign channel = include.channel | default: 1 %}
+<a href="{{ include.talk.url }}" class="talk-card">
+  <div class="talk-card__tv">
+    <span class="talk-card__antennas" aria-hidden="true"></span>
+    <div class="talk-card__slide">
+      <div class="talk-card__picture">
+        <img src="{{ include.talk.img }}" alt="{{ include.talk.title }}" />
+      </div>
+      <div class="talk-card__osd" aria-hidden="true">
+        <span class="talk-card__osd-channel"
+          >CH {% if channel < 10 %}0{% endif %}{{ channel }}</span
+        >
+        <span class="talk-card__osd-date"
+          >{{ include.talk.date | date: "%b %Y" }}</span
+        >
+        <span class="talk-card__osd-media">
+          {% if include.talk.video %}<span>▶ VIDEO</span>{% endif %}
+          {% if include.talk.slides %}<span>▤ SLIDES</span>{% endif %}
+        </span>
+        <span class="talk-card__osd-play">▶ PLAY</span>
+      </div>
+    </div>
+    <div class="talk-card__panel" aria-hidden="true">
+      <span class="talk-card__brand">ootes</span>
+      <span class="talk-card__knobs">
+        <span class="talk-card__knob"></span>
+        <span class="talk-card__knob"></span>
+        <span class="talk-card__led"></span>
+      </span>
+    </div>
+  </div>
+  <div class="talk-card__body">
+    <span class="talk-card__event">{{ include.talk.event }}</span>
+    <h3 class="talk-card__title">{{ include.talk.title }}</h3>
+    <p class="talk-card__text">
+      {{ include.talk.content | strip_html | truncatewords: 20 }}
+    </p>
+    <span class="talk-card__link">Bekijk talk ➝</span>
+  </div>
+</a>

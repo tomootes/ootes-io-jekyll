@@ -6,23 +6,10 @@ title: Over
 {% include hero.html project_title="Talks" %}
 
 <div class="container mt-12">
-  <div class="md:grid grid-cols-3 gap-8">
+  <div class="talk-grid">
     {% assign sorted_talks = site.talks | sort: "date" %} {% for talk in
     sorted_talks reversed %}
-    <a href="{{ talk.url }}" class="card mb-4 md:mb-0 md:w-full p-4"
-      ><div class="card-header">
-        <div class="">
-          <img src="{{talk.img}}" alt="{{talk.img}}" class="img-fluid" />
-        </div>
-        <h3 class="card-header__title">{{ talk.title }}</h3>
-      </div>
-      <div class="card-block">
-        <div class="card-text text-left">
-          {{ talk.content | truncatewords: 15 }}
-        </div>
-      </div>
-      <span class="card-link">Lees meer ➝</span></a
-    >
+      {% include talk-card.html talk=talk channel=forloop.index %}
     {% endfor %}
   </div>
 </div>

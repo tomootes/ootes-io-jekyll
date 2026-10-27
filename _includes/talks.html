@@ -1,0 +1,16 @@
+<section class="talks-section">
+  <div class="container">
+    <h1
+      class="section--heading flex-center mb-6 text-2xl text-center font-bold"
+    >
+      Talks
+    </h1>
+    <div class="talk-grid">
+      {% assign sorted_talks = site.talks | sort: "date" | reverse %} {% for
+      talk in sorted_talks limit: 4 %}
+      {% include talk-card.html talk=talk channel=forloop.index %}
+      {% endfor %}
+    </div>
+    <a href="/talks" class="talks-section__more">Alle talks ➝</a>
+  </div>
+</section>
