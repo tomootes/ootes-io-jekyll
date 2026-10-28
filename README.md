@@ -1,6 +1,9 @@
 # Ootes.io Portfolio Website
 
-This repository contains the source code for **[ootes.io](https://ootes.io)** – the personal portfolio website of **Tom Ootes**. The site is built with **Jekyll** for static site generation, **SCSS** for styling, and **Vite** for JavaScript bundling.
+This repository contains the source code for **[ootes.io](https://ootes.io)** –
+the personal portfolio website of **Tom Ootes**. The site is built with
+**Jekyll** for static site generation, **SCSS** for styling, and **Vite** for
+JavaScript bundling.
 
 ---
 
@@ -21,10 +24,13 @@ This repository contains the source code for **[ootes.io](https://ootes.io)** �
 
 ## Features
 
-- **Portfolio & Projects** – Showcase of personal projects with detailed case studies.
+- **Portfolio & Projects** – Showcase of personal projects with detailed case
+  studies.
 - **Blog** – Articles written in Markdown, rendered by Jekyll.
-- **Tagging System** – (Planned) Ability to add tags such as `plants` and `ecology` to blog posts for better navigation.
-- **Responsive Design** – Tailored for desktop and mobile using custom SCSS utilities.
+- **Tagging System** – (Planned) Ability to add tags such as `plants` and
+  `ecology` to blog posts for better navigation.
+- **Responsive Design** – Tailored for desktop and mobile using custom SCSS
+  utilities.
 - **Live Reload** – Development server with automatic rebuilding of assets.
 
 ---
@@ -34,15 +40,15 @@ This repository contains the source code for **[ootes.io](https://ootes.io)** �
 - **Jekyll** – Static site generator (`bundle exec jekyll serve`).
 - **SCSS** – Stylesheets compiled via PostCSS.
 - **PostCSS** – Handles autoprefixing and CSS processing.
-- **Vite** – Bundles JavaScript assets (`vite`).
- 38: - **pnpm** – Package manager for Node dependencies.
+- **Vite** – Bundles JavaScript assets (`vite`). 38: - **pnpm** – Package
+  manager for Node dependencies.
 
 ---
 
 ## Prerequisites
 
-- **Ruby** (>= 2.7) with Bundler (`gem install bundler`).
- 45: - **Node.js** (>= 18) and **pnpm** (`npm install -g pnpm`).
+- **Ruby** (>= 2.7) with Bundler (`gem install bundler`). 45: - **Node.js**
+  (>= 18) and **pnpm** (`npm install -g pnpm`).
 - **pnpm** (optional, used in original docs for CSS watch).
 
 ---
@@ -58,23 +64,24 @@ cd ootes-io
 bundle install
 
 # Install Node dependencies
- 61: pnpm install
+pnpm install
 ```
 
 ---
 
 ## Building CSS
 
-The project uses **PostCSS** to compile `assets/css/main.css` into `assets/css/output.css`.
+The project uses **PostCSS** to compile `assets/css/main.css` into
+`assets/css/output.css`.
 
 ```bash
 # One‑time build
- 72: pnpm run build:css
+pnpm run build:css
 
 # Watch for changes (recommended during development)
 # If you prefer pnpm, you can also run:
 # pnpm watch:css
- 77: pnpm run watch:css
+pnpm run watch:css
 ```
 
 ---
@@ -86,13 +93,15 @@ The project uses **PostCSS** to compile `assets/css/main.css` into `assets/css/o
 bundle exec jekyll serve
 ```
 
-The site will be available at `http://localhost:4000`. The server watches for changes in content, layout, and SCSS (when the CSS watch command is running).
+The site will be available at `http://localhost:4000`. The server watches for
+changes in content, layout, and SCSS (when the CSS watch command is running).
 
 ---
 
 ## Adding Blog Posts
 
-Blog posts are stored in the `_posts` directory and must follow Jekyll’s naming convention:
+Blog posts are stored in the `_posts` directory and must follow Jekyll’s naming
+convention:
 
 ```
 YYYY-MM-DD-title.md
@@ -108,7 +117,6 @@ title: "My New Post"
 categories: [blog]
 # tags: [plants, ecology]  # Planned feature
 ---
-
 Your markdown content goes here.
 ```
 
@@ -137,8 +145,9 @@ Your markdown content goes here.
 
 ## License
 
-This project is licensed under the **Creative Commons Attribution 4.0 International (CC‑BY‑4.0)** license. See the `LICENSE` file for details.
+This project is licensed under the **Creative Commons Attribution 4.0
+International (CC‑BY‑4.0)** license. See the `LICENSE` file for details.
 
 ---
 
-*Generated on $(date '+%Y-%m-%d')*
+_Generated on $(date '+%Y-%m-%d')_
