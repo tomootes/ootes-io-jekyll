@@ -1,4 +1,5 @@
-<div class="intro md:h-96">
+<div class="intro {% unless include.project_title %}hero-3d{% endunless %}">
+  {% if include.project_title %}
   <div id="particles" class="particles">
     <canvas
       class="particles-js-canvas-el"
@@ -7,7 +8,11 @@
       height="717"
     ></canvas>
   </div>
-  <div class="overlay" id="particles-js">
+  {% else %}
+  <canvas id="hero3d" aria-hidden="true"></canvas>
+  <script defer src="{{ '/assets/js/hero3d.bundle.js' | relative_url }}"></script>
+  {% endif %}
+  <div class="overlay"{% if include.project_title %} id="particles-js"{% endif %}>
     <div class="container">
       {% if include.project_title %}
       <span class="intro-text text-3xl font-medium">
@@ -27,5 +32,9 @@
       <div class="bottom"><span class="down">Δ</span></div>
       {% endif %}
     </div>
+  </div>
+  <div class="intro__credits">
+    <span>Generated with <i>Qwen3.8:27B Mtp</i></span>
+    <span>Replace the homepage hero (currently particles.js canvas on a dark gradient) with a live, moving 3D scene rendered in Three.js: a greenhouse with a full IBC (1000L) watering tank, tomatoes growing inside and grapevines on the outside, in a cyberpunk style under a warm sunny midday sky. Other pages (blog, over, talks, projects) keep the current particles hero.</span>
   </div>
 </div>

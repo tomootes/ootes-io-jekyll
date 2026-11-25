@@ -78,5 +78,7 @@ let config = {
 };
 
 window.onload = function () {
-  particlesJS("particles-js", config);
+  if (document.getElementById("particles-js")) {
+    particlesJS("particles-js", config);
+  }
 };

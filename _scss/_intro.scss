@@ -1,25 +1,68 @@
-.intro{
+.intro {
   height: 30rem;
   position: relative;
   color: white;
 
-  #particles{
+  #particles {
     height: 100%;
     width: 100%;
   }
 
-  .overlay{
+  &.hero-3d {
+    overflow: hidden;
+    height: 60rem;
+
+    canvas#hero3d {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      // Shown if WebGL (or the JS bundle) is unavailable
+      background: linear-gradient(
+        180deg,
+        #79bdea 0%,
+        #c9e9f4 55%,
+        #fdf2d3 100%
+      );
+    }
+
+    .overlay {
+      // Keep the white text and button readable over the bright scene
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(7, 18, 14, 0.38) 0%,
+          rgba(7, 18, 14, 0.12) 45%,
+          rgba(7, 18, 14, 0.42) 100%
+        );
+        pointer-events: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      // JS renders a single static frame; make sure nothing else animates
+      .down {
+        animation: none;
+      }
+    }
+  }
+
+  .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
 
-    .container{
+    .container {
       display: flex;
       height: 100%;
-      
-      .intro-text{
+
+      .intro-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -30,78 +73,78 @@
           z-index: 999;
         }
 
-        .heading{
+        .heading {
           text-align: center;
           margin: 0;
           max-width: 50%;
         }
-        .icon{
+        .icon {
           font-size: 2rem;
           margin: 0;
         }
-		button{
-			margin: 1rem 0 0 0;
-		}
+        button {
+          margin: 1rem 0 0 0;
+        }
       }
-      .bottom{
+      .bottom {
         position: absolute;
         bottom: 0;
         width: 100%;
         display: flex;
         justify-content: center;
-        .down{
-            font-size: 3rem;
-            margin: 1rem 0 1rem;
-            transform: rotate(180deg);
-            font-family: monospace;
-            // color: $brand-primary-dark;
-            color: white;
+        .down {
+          font-size: 3rem;
+          margin: 1rem 0 1rem;
+          transform: rotate(180deg);
+          font-family: monospace;
+          // color: $brand-primary-dark;
+          color: white;
         }
       }
     }
   }
 
-  &.one-third{
+  &.one-third {
     height: 33.33vh;
-    #particles{
-
+    #particles {
     }
-    .container{
+    .container {
       height: 100%;
     }
-    .overlay{
-      .intro-text{
+    .overlay {
+      .intro-text {
         display: flex;
         flex-direction: column;
         z-index: 999;
-        .icon{
+        .icon {
           margin: 0;
         }
-        h3{
+        h3 {
           margin: 0;
         }
-
       }
 
-      .flex-center{
-
+      .flex-center {
         align-items: flex-end;
         margin-bottom: var(--gutter-small);
 
-        @media only screen and (min-width: var(--break-sm))  {
+        @media only screen and (min-width: var(--break-sm)) {
           align-items: center;
         }
-
       }
-
     }
   }
 
-  &.full-height{
-    .container{
-
+  &.full-height {
+    .container {
     }
   }
-
-
+  &__credits {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    font-family: monospace;
+  }
 }

@@ -6,12 +6,14 @@
   "scripts": {
     "build:css": "postcss assets/css/main.css -o assets/css/output.css",
     "watch:css": "postcss assets/css/main.css -o assets/css/output.css --watch",
+    "build:js": "vite build",
     "jekyll": "bundle exec jekyll serve",
-    "watch:js": "vite"
+    "watch:js": "vite build --watch"
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.2.5",
     "autoprefixer": "^10.4.0",
+    "three": "^0.187.0",
     "vite": "^6.3.5"
   },
   "devDependencies": {
